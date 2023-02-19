@@ -430,6 +430,10 @@ a{
             margin: 0;
         }
 
+        .divNotice{
+            font-size: 12px !important;
+        }
+
         .locationDiv .pnlHeader{
             transform: none;
         }
@@ -491,6 +495,10 @@ a{
             line-height: 10px;
         }
 
+        .fullWidth .bodyText{
+            padding: 0 10px;
+        }
+
         .p1{
             height: 700px;
         }
@@ -512,6 +520,14 @@ a{
             display: none;
             width:0;
             height:0;
+        }
+
+        .divNotice{
+            font-size: 12px !important;
+        }
+
+        #footerDiv{
+            height: 150px !important;
         }
 
         #heroTitle{
@@ -556,6 +572,10 @@ a{
         .lnkFooter{
             font-size: 14px;
             margin: 0 5px;
+        }
+
+        .divnNotice{
+            font-size: 12px;
         }
 
         #heroContents{
