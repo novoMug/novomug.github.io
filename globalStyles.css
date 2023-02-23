@@ -33,7 +33,7 @@ a{
 #heroDiv{
     height:100vh;
     width:100vw;
-    background-color: var(--darkestBlue);
+    background-color: var(--darkerBlue);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -83,7 +83,7 @@ a{
 
 #heroSub{
     /* width: 800px; */
-    margin: 20px 0;
+    margin: 20px 20px;
     text-align: center;
 }
 
@@ -108,13 +108,90 @@ a{
 
 #bodyDiv{
     width: 100vw;
-    height: 1400px;
+    height: 1900px;
     margin: 0;
     background-color: var(--webWhite);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.servicesDiv{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 50px 0;
+}
+
+.servicesTitle{
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* width: 300px; */
+    align-self: center;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:var(--darkerBlue);
+    border-bottom: solid 3px var(--darkerBlue);
+}
+
+.sfHolder{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.servicesFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    letter-spacing: 1px;
+}
+
+.servHolder{
+    margin: 0 40px;
+    border-left: solid 3px var(--cttBlue);
+    padding: 0 0 0 5px;
+}
+
+.s1, .s3{
+    align-self: center;
+}
+
+.s2, .s4{
+    align-self: center;
+}
+
+.servLG{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--webBlack);
+    text-decoration: none;
+    line-height: 27px;
+}
+
+.servSM{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color:var(--webBlack);
+    /* opacity: 0.85; */
+    transform: translateX(2px);
+    line-height: 10px;
+}
+
+.servLG, .servSM{
+    display: block;
 }
 
 .panel{
@@ -124,7 +201,6 @@ a{
     color:var(--webBlack);
     border-radius: 10px;
     display: flex;
-
     align-items: center;
     z-index: 4 !important;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
@@ -142,10 +218,12 @@ a{
 
 .pnlHeader{
     text-align: left;
-    color: var(--webBlack);
-    font-size: 25px;
+    color: var(--darkerBlue);
+    font-size: 32px;
     letter-spacing: 2px;
-    transform: translateY(-50px);
+    transform: translateY(-40px);
+    border-bottom: solid 3px var(--darkerBlue);
+    /* text-decoration: underline; */
     /* margin-bottom: 20px; */
 
 }
@@ -177,11 +255,11 @@ a{
 }
 
 .ad1{
-    border-right: solid 1px #222222;
+    border-right: solid 1px var(--cttBlue);
 }
 
 .ad2{
-    border-left: solid 1px #222222;
+    border-left: solid 1px var(--cttBlue);
 }
 
 .noteContainer{
@@ -193,6 +271,8 @@ a{
 
 .jotList{
     list-style:inside;
+    /* color: var(--darkestBlue) !important; */
+    /* opacity: 0.85; */
 }
 
 
@@ -223,7 +303,7 @@ a{
 .fullWidth{
     width: 100%;
     height: 180px;
-    background-color: var(--darkBlue);
+    background-color: var(--darkerBlue);
     color: var(--webWhite);
     padding: 0 75px;
     text-align: center;
@@ -337,7 +417,11 @@ a{
         }
 
         #bodyDiv{
-            height: 1600px;
+            height: 2100px;
+        }
+
+        .servicesDiv{
+            height: 400px;
         }
     }
 
@@ -376,7 +460,16 @@ a{
         }
 
         #bodyDiv{
-            height: 1700px;
+            height: 2200px;
+        }
+
+        .servicesDiv{
+            height: 400px;
+            width: 90%;
+        }
+
+        .servHolder{
+            margin: 0 20px;
         }
     }
 
@@ -405,8 +498,8 @@ a{
 
         .ad1{
             border-right: none;
-            border-bottom: solid 1px #222222;
-            border-top: solid 1px #222222;
+            border-bottom: solid 2px var(--cttBlue);
+            border-top: solid 2px var(--cttBlue);
         }
 
         .p1{
@@ -439,8 +532,21 @@ a{
         }
 
         #bodyDiv{
-            height: 2100px;
+            height: 2500px;
         }
+
+        .servicesDiv{
+            height: 500px;
+            width: 95%;
+        }
+
+        .servHolder{
+            margin: 0 0 0 10px;
+        }
+
+        /* .servLG{
+            line-height: 17px;
+        } */
 
         #heroSub{
             padding: 0 10px;
@@ -477,8 +583,8 @@ a{
 
         .ad1{
             border-right: none;
-            border-bottom: solid 1px #222222;
-            border-top: solid 1px #222222;
+            border-bottom: solid 1px var(--cttBlue);
+            border-top: solid 1px var(--cttBlue);
         }
 
         .jotList{
@@ -513,7 +619,39 @@ a{
         }
 
         #bodyDiv{
-            height: 1300px;
+            height: 2000px;
+        }
+
+        .servicesDiv{
+            height: 600px;
+            width: 100%;
+            margin:0;
+        }
+
+        .servHolder{
+            margin: 0 20px;
+        }
+
+        /* .servLG{
+            line-height: 17px;
+        } */
+
+        #heroSub{
+            padding: 0 10px;
+            font-size: 14px;
+        }
+
+        .servicesFlex{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .s1, .s3 {
+            align-self: flex-start;
+        }
+
+        .s2, .s4{
+            align-self: flex-end;
         }
 
         #mapFrame{
@@ -543,8 +681,12 @@ a{
 
         .pnlHeader{
             transform: none;
-            font-size: 20px;
+            font-size: 25px;
             margin-bottom: 20px;
+        }
+
+        .servicesTitle{
+            font-size: 25px;
         }
 
         .pnlText{
