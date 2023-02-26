@@ -1,11 +1,14 @@
-
-// document.body.scrollTop = 0;
-// document.documentElement.scrollTop = 0;
-
-
+var imgArray = ['FoggiestMountainEver.jpeg', 'FoggyBeachGreyscale.jpeg', 'NightSkyBlueAndGrey.jpeg', 'SunsetOnTheDock.jpeg'];
 var overlay = document.getElementById("overlayDiv");
+var heroDiv = document.getElementById('heroDiv');
+var imgString = 'url(./img/';
+var imgStringEnd = ')';
+var rndNum;
 
-// overlay.style.transform = 'translatey(' + document.documentElement.scrollTop.toString() + ')';
+function setHeroImg(){
+    rndNum = Math.floor(Math.random() * 4);
+    heroDiv.style.backgroundImage = imgString + imgArray[rndNum] + imgStringEnd;
+}
 
 function removeOverlay() {
     // debugger;
@@ -17,8 +20,6 @@ function removeOverlay() {
     } , 400);
     
 }
-
+setHeroImg();
 setTimeout(removeOverlay, 800);
-
-// document.body.style.scrollBehavior = 'smooth';
-// document.documentElement.style.scrollBehavior = 'smooth';
+// setInterval(setHeroImg, 5000);
